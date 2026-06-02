@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>School Fees Receipt</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="script.js" defer></script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- SIDEBAR -->
+
+    <div class="sidebar">
+
+        <h2>Student Portal</h2>
+
+        <ul>
+
+            <li><a href="dashboard.html">Dashboard</a></li>
+
+            <li><a href="courses.html">Courses Registered</a></li>
+
+            <li><a href="receipt.html">School Fees Receipt</a></li>
+
+            <li><a href="results.html">Results</a></li>
+
+            <li><a href="library.html">Library</a></li>
+
+            <li><a href="about.html">About</a></li>
+
+        </ul>
+
+    </div>
+
+    <!-- MAIN CONTENT -->
+
+    <div class="main-content">
+
+        <div class="banner">
+
+            <h2>School Fees Receipt</h2>
+
+            <p>
+
+                Official Payment Confirmation
+
+            </p>
+
+        </div>
+
+        <div class="receipt">
+
+            <h2>UNIVERSITY PAYMENT RECEIPT</h2>
+
+            <hr>
+
+            <br>
+
+            <p>
+                <strong>Receipt Number:</strong>
+                INV-2026-0001
+            </p>
+
+            <p>
+                <strong>Payment Date:</strong>
+                01 June 2026
+            </p>
+
+            <p>
+                <strong>Payment Status:</strong>
+                <span style="
+                background:green;
+                color:white;
+                padding:5px 10px;
+                border-radius:5px;">
+                VERIFIED
+                </span>
+            </p>
+
+            <br>
+
+            <h3>Student Information</h3>
+
+            <hr>
+
+            <br>
+
+            <p>
+                <strong>Name:</strong>
+                GBARA WEWELOBARI PEACEFUL
+            </p>
+
+            <p>
+                <strong>Matric Number:</strong>
+                ENG/2025/001
+            </p>
+
+            <p>
+                <strong>Faculty:</strong>
+                Engineering
+            </p>
+
+            <p>
+                <strong>Department:</strong>
+                Mechanical Engineering
+            </p>
+
+            <p>
+                <strong>Level:</strong>
+                200 Level
+            </p>
+
+            <br>
+
+            <h3>Payment Details</h3>
+
+            <hr>
+
+            <br>
+
+            <table>
+
+                <tr>
+                    <th>Description</th>
+                    <th>Amount (₦)</th>
+                </tr>
+
+                <tr>
+                    <td>School Fees</td>
+                    <td>125,000</td>
+                </tr>
+
+                <tr>
+                    <td>Portal Charges</td>
+                    <td>0</td>
+                </tr>
+
+                <tr>
+                    <td>Development Levy</td>
+                    <td>0</td>
+                </tr>
+
+                <tr>
+                    <th>Total Paid</th>
+                    <th>125,000</th>
+                </tr>
+
+            </table>
+
+            <br>
+
+            <h3>Payment Summary</h3>
+
+            <p>
+
+                This certifies that the student named above
+                has successfully paid the required school fees
+                for the 2025/2026 Academic Session.
+
+            </p>
+
+            <br>
+
+            <div style="
+            border:2px dashed #006400;
+            padding:20px;
+            text-align:center;
+            border-radius:10px;">
+
+                UNIVERSITY BURSARY STAMP
+
+            </div>
+
+            <br>
+
+            <button
+            class="btn"
+            onclick="printReceipt()">
+
+                Print Receipt
+
+            </button>
+
+            <button
+            class="btn btn-secondary"
+            onclick="feesStatus()">
+
+                Verify Payment
+
+            </button>
+
+            <button
+            class="btn"
+            onclick="window.location.href='dashboard.html'">
+
+                Back to Dashboard
+
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<footer>
+
+<p>
+
+University Student Portal © 2026
+
+</p>
+
+</footer>
+
+</body>
+
+</html>

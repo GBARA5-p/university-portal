@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Student Dashboard</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="script.js" defer></script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- SIDEBAR -->
+
+    <div class="sidebar">
+
+        <h2>Student Portal</h2>
+
+        <ul>
+
+            <li>
+                <a href="dashboard.html">Dashboard</a>
+            </li>
+
+            <li>
+                <a href="courses.html">Courses Registered</a>
+            </li>
+
+            <li>
+                <a href="receipt.html">School Fees Receipt</a>
+            </li>
+
+            <li>
+                <a href="results.html">Results</a>
+            </li>
+
+            <li>
+                <a href="library.html">Library</a>
+            </li>
+
+            <li>
+                <a href="about.html">About</a>
+            </li>
+
+        </ul>
+
+    </div>
+
+    <!-- MAIN CONTENT -->
+
+    <div class="main-content">
+
+        <!-- WELCOME BANNER -->
+
+        <div class="banner">
+
+            <h2>Welcome Back</h2>
+
+            <p>
+
+                Student Information Dashboard
+
+            </p>
+
+            <br>
+
+            <p>
+
+                Academic Session: 2025/2026
+
+            </p>
+
+            <br>
+
+            <button class="btn" onclick="welcomeStudent()">
+
+                Welcome Message
+
+            </button>
+
+        </div>
+
+        <!-- CURRENT DATE -->
+
+        <div class="profile-card">
+
+            <h2>Current Date</h2>
+
+            <p id="currentDate"></p>
+
+        </div>
+
+        <!-- DASHBOARD CARDS -->
+
+        <div class="cards">
+
+            <div class="card">
+
+                <h3>CGPA</h3>
+
+                <p>4.82</p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>Registered Courses</h3>
+
+                <p>5 Courses</p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>School Fees</h3>
+
+                <p>Paid</p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>Level</h3>
+
+                <p>200 Level</p>
+
+            </div>
+
+        </div>
+
+        <!-- STUDENT PROFILE -->
+
+        <div class="profile-card">
+
+            <h2>Student Profile</h2>
+
+            <div class="profile-grid">
+
+                <div class="profile-item">
+                    <strong>Name:</strong><br>
+                    GBARA WEWELOBARI PEACEFUL
+                </div>
+
+                <div class="profile-item">
+                    <strong>Matric Number:</strong><br>
+                    ENG/2025/001
+                </div>
+
+                <div class="profile-item">
+                    <strong>Faculty:</strong><br>
+                    Engineering
+                </div>
+
+                <div class="profile-item">
+                    <strong>Department:</strong><br>
+                    Mechanical Engineering
+                </div>
+
+                <div class="profile-item">
+                    <strong>Session:</strong><br>
+                    2025/2026
+                </div>
+
+                <div class="profile-item">
+                    <strong>Status:</strong><br>
+                    Active Student
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- QUICK ACTIONS -->
+
+        <div class="profile-card">
+
+            <h2>Quick Actions</h2>
+
+            <br>
+
+            <button
+            class="btn"
+            onclick="window.location.href='courses.html'">
+
+                View Courses
+
+            </button>
+
+            <button
+            class="btn btn-secondary"
+            onclick="window.location.href='receipt.html'">
+
+                School Fees Receipt
+
+            </button>
+
+            <button
+            class="btn"
+            onclick="window.location.href='results.html'">
+
+                Check Results
+
+            </button>
+
+        </div>
+
+        <!-- ANNOUNCEMENTS -->
+
+        <div class="profile-card">
+
+            <h2>University Announcements</h2>
+
+            <br>
+
+            <div class="notice">
+
+                <h4>Course Registration</h4>
+
+                <p>
+
+                    All students must complete course
+                    registration before the deadline, lest you pay fine of N10,000.
+
+                </p>
+
+            </div>
+
+            <div class="notice">
+
+                <h4>Engineering Seminar</h4>
+
+                <p>
+
+                    Annual Faculty of Engineering
+                    Innovation Seminar scheduled for next month.
+
+                </p>
+
+            </div>
+
+            <div class="notice">
+
+                <h4>Library Access</h4>
+
+                <p>
+
+                    Digital Library resources are now
+                    available to all registered students.
+
+                </p>
+
+            </div>
+
+        </div>
+
+        <!-- GPA CALCULATOR -->
+
+        <div class="profile-card">
+
+            <h2>GPA Calculator</h2>
+
+            <br>
+
+            <input
+            type="number"
+            id="units"
+            placeholder="Total Units">
+
+            <br><br>
+
+            <input
+            type="number"
+            id="points"
+            placeholder="Total Grade Points">
+
+            <br><br>
+
+            <button
+            class="btn"
+            onclick="calculateGPA()">
+
+                Calculate GPA
+
+            </button>
+
+            <br><br>
+
+            <h3 id="gpaResult"></h3>
+
+        </div>
+
+    </div>
+
+</div>
+
+<footer>
+
+    <p>
+
+        University Student Portal © 2026
+
+    </p>
+
+</footer>
+
+</body>
+
+</html>

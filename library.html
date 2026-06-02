@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>University Library</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="script.js" defer></script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- SIDEBAR -->
+
+    <div class="sidebar">
+
+        <h2>Student Portal</h2>
+
+        <ul>
+
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="courses.html">Courses Registered</a></li>
+            <li><a href="receipt.html">School Fees Receipt</a></li>
+            <li><a href="results.html">Results</a></li>
+            <li><a href="library.html">Library</a></li>
+            <li><a href="about.html">About</a></li>
+
+        </ul>
+
+    </div>
+
+    <!-- MAIN CONTENT -->
+
+    <div class="main-content">
+
+        <!-- HEADER -->
+
+        <div class="banner">
+
+            <h2>Digital Library Portal</h2>
+
+            <p>
+                Access academic books, journals, and research materials.
+            </p>
+
+        </div>
+
+        <!-- SEARCH SECTION -->
+
+        <div class="profile-card">
+
+            <h2>Search Library</h2>
+
+            <input
+            type="text"
+            placeholder="Search books, authors, journals..."
+            style="width:100%;padding:12px;margin-top:10px;">
+
+        </div>
+
+        <!-- CATEGORIES -->
+
+        <div class="profile-card">
+
+            <h2>Categories</h2>
+
+            <div class="cards">
+
+                <div class="card">
+                    <h3>Engineering</h3>
+                    <p>Books & research papers</p>
+                </div>
+
+                <div class="card">
+                    <h3>Science</h3>
+                    <p>Physics, Chemistry, Biology</p>
+                </div>
+
+                <div class="card">
+                    <h3>Technology</h3>
+                    <p>Computer & IT resources</p>
+                </div>
+
+                <div class="card">
+                    <h3>General Studies</h3>
+                    <p>Humanities & social science</p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- BOOK LIST -->
+
+        <div class="profile-card">
+
+            <h2>Available Books</h2>
+
+            <table>
+
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Category</th>
+                    <th>Action</th>
+                </tr>
+
+                <tr>
+                    <td>Engineering Mechanics</td>
+                    <td>J.L. Meriam</td>
+                    <td>Engineering</td>
+                    <td><button class="btn">Download</button></td>
+                </tr>
+
+                <tr>
+                    <td>Introduction to Physics</td>
+                    <td>Halliday & Resnick</td>
+                    <td>Science</td>
+                    <td><button class="btn">Download</button></td>
+                </tr>
+
+                <tr>
+                    <td>Computer Fundamentals</td>
+                    <td>Peter Norton</td>
+                    <td>Technology</td>
+                    <td><button class="btn">Download</button></td>
+                </tr>
+
+                <tr>
+                    <td>Mathematics for Engineers</td>
+                    <td>K.A. Stroud</td>
+                    <td>Engineering</td>
+                    <td><button class="btn">Download</button></td>
+                </tr>
+
+            </table>
+
+        </div>
+
+        <!-- E-LIBRARY INFO -->
+
+        <div class="profile-card">
+
+            <h2>E-Library Services</h2>
+
+            <p>
+
+                The university digital library provides access to
+                thousands of academic resources including journals,
+                textbooks, research papers, and past project works.
+
+            </p>
+
+            <br>
+
+            <p>
+
+                Students are encouraged to use the library responsibly
+                for academic purposes only.
+
+            </p>
+
+        </div>
+
+        <!-- ANNOUNCEMENTS -->
+
+        <div class="profile-card">
+
+            <h2>Library Announcements</h2>
+
+            <div class="notice">
+
+                <h4>New Books Added</h4>
+                <p>Over 500 engineering textbooks have been added to the digital library.</p>
+
+            </div>
+
+            <div class="notice">
+
+                <h4>Maintenance Notice</h4>
+                <p>The library system will undergo maintenance this weekend.</p>
+
+            </div>
+
+        </div>
+
+        <!-- BACK BUTTON -->
+
+        <div class="profile-card">
+
+            <button class="btn"
+            onclick="window.location.href='dashboard.html'">
+
+                Back to Dashboard
+
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<footer>
+
+<p>
+University Student Portal © 2026
+</p>
+
+</footer>
+
+</body>
+
+</html>

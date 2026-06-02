@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Registered Courses</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="script.js" defer></script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- SIDEBAR -->
+
+    <div class="sidebar">
+
+        <h2>Student Portal</h2>
+
+        <ul>
+
+            <li>
+                <a href="dashboard.html">Dashboard</a>
+            </li>
+
+            <li>
+                <a href="courses.html">Courses Registered</a>
+            </li>
+
+            <li>
+                <a href="receipt.html">School Fees Receipt</a>
+            </li>
+
+            <li>
+                <a href="results.html">Results</a>
+            </li>
+
+            <li>
+                <a href="library.html">Library</a>
+            </li>
+
+            <li>
+                <a href="about.html">About</a>
+            </li>
+
+        </ul>
+
+    </div>
+
+    <!-- MAIN CONTENT -->
+
+    <div class="main-content">
+
+        <div class="banner">
+
+            <h2>Course Registration Portal</h2>
+
+            <p>
+
+                View all registered courses for the current semester.
+
+            </p>
+
+        </div>
+
+        <!-- STUDENT INFO -->
+
+        <div class="profile-card">
+
+            <h2>Student Information</h2>
+
+            <div class="profile-grid">
+
+                <div class="profile-item">
+                    <strong>Name:</strong><br>
+                    GBARA WEWELOBARI PEACEFUL
+                </div>
+
+                <div class="profile-item">
+                    <strong>Faculty:</strong><br>
+                    Engineering
+                </div>
+
+                <div class="profile-item">
+                    <strong>Department:</strong><br>
+                    Mechanical Engineering
+                </div>
+
+                <div class="profile-item">
+                    <strong>Level:</strong><br>
+                    200 Level
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- SEARCH -->
+
+        <div class="profile-card">
+
+            <h2>Search Courses</h2>
+
+            <br>
+
+            <input
+            type="text"
+            id="courseSearch"
+            placeholder="Search course code..."
+            onkeyup="searchCourses()"
+            style="width:100%;padding:12px;">
+
+        </div>
+
+        <!-- COURSE TABLE -->
+
+        <div class="profile-card">
+
+            <h2>Registered Courses</h2>
+
+            <table id="courseTable">
+
+                <tr>
+
+                    <th>Course Code</th>
+                    <th>Course Title</th>
+                    <th>Units</th>
+                    <th>Semester</th>
+
+                </tr>
+
+                <tr>
+
+                    <td>GET 206</td>
+                    <td>Entrepreneurship Studies</td>
+                    <td>2</td>
+                    <td>Second Semester</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>MEE 204</td>
+                    <td>Engineering Mechanics</td>
+                    <td>3</td>
+                    <td>Second Semester</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>GST 205</td>
+                    <td>General Engineering Studies</td>
+                    <td>2</td>
+                    <td>Second Semester</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>MTH 202</td>
+                    <td>Engineering Mathematics II</td>
+                    <td>3</td>
+                    <td>Second Semester</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>PHY 202</td>
+                    <td>Applied Physics</td>
+                    <td>2</td>
+                    <td>Second Semester</td>
+
+                </tr>
+
+            </table>
+
+        </div>
+
+        <!-- SUMMARY -->
+
+        <div class="cards">
+
+            <div class="card">
+
+                <h3>Total Courses</h3>
+
+                <p>5 Courses</p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>Total Units</h3>
+
+                <p>12 Units</p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>Semester</h3>
+
+                <p>Second Semester</p>
+
+            </div>
+
+        </div>
+
+        <br>
+
+        <!-- ACTION BUTTONS -->
+
+        <button
+        class="btn"
+        onclick="window.print()">
+
+            Print Course Form
+
+        </button>
+
+        <button
+        class="btn btn-secondary"
+        onclick="window.location.href='dashboard.html'">
+
+            Back to Dashboard
+
+        </button>
+
+    </div>
+
+</div>
+
+<footer>
+
+<p>
+
+University Student Portal © 2026
+
+</p>
+
+</footer>
+
+</body>
+
+</html>
